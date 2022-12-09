@@ -4,8 +4,8 @@
 
 ### About: 
 
-> This is an application developed in order to practice and show some of the knowledge I acquired during my front-end internship at [@Seedz 🌱](https://www.seedz.ag/).
-It consumes the Marvel Comics API. I chose Vue.Js framework, since this is the framework I use in my day to day work.
+> This is an application developed by me in order to practice and show some of the knowledge I acquired during my front-end internship at [@Seedz 🌱](https://www.seedz.ag/).
+I chose Vue.Js framework, since this is the framework I use in my day to day work. It consumes the Marvel Comics API.
 
 ### Technologies I used: 
 
@@ -18,7 +18,7 @@ It consumes the Marvel Comics API. I chose Vue.Js framework, since this is the f
 
 ## How to run this aplication: 
 
-1) In order to run this aplication, you must have node.js installed and running at v14.x.x and yarn
+1) In order to run this aplication, you must have node.js installed and running at v14.x.x and yarn as well
 2) Clone the repository with this command at Git Bash: `git clone https://github.com/k1dias/marvel-api.git`
 3) Open the project
 4) Run CMD: yarn install
