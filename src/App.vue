@@ -25,8 +25,6 @@
     }
   }
 
-  console.log(isMobile)
-
 </script>
 
 <style>
