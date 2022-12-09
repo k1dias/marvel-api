@@ -27,6 +27,11 @@ const routes = [
     name: 'character',
     component: () => import('../components/Character.vue')
   },
+  {
+    path: '/CharacterSearch',
+    name: 'charactersearch',
+    component: () => import('../components/CharacterSearch.vue')
+  }
 ]
 
 const router = new VueRouter({

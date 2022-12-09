@@ -1,20 +1,40 @@
 <template>
   <div class="input-group">
+    <form @submit.prevent="getData">
+    </form>
     <input
       type="search"
       class="form-control"
       placeholder="Buscar personagem"
+      v-model="inputValue"
     />
-    <button type="button" class="btn btn-search">
-      <i class="fas fa-search"></i>
-    </button>
+    <router-link :to="{ name: 'charactersearch', params: {inputValue: this.inputValue}}">
+      <button 
+        type="button" 
+        class="btn btn-search"
+        @click="captureSearch($event)">
+        <i class="fas fa-search"></i>
+      </button>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
   name: "SearchBar",
-};
+
+  data() {
+    return {
+      inputValue: null,
+    }
+  },
+
+  methods: {
+    captureSearch() {
+      console.log(this.inputValue)
+    }
+  }, 
+}
 </script>
 
 <style lang="scss">

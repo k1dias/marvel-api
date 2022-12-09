@@ -3,14 +3,13 @@ import { public_key} from '../../src/marvel';
 
 
 const getCharacters = () => {
-    try {
-      const res = http.get(`characters?apikey=${public_key}`)
-      return res
-    } catch (error) {
-      throw error
-    }
+  try {
+    const res = http.get(`characters?apikey=${public_key}`)
+    return res
+  } catch (error) {
+    throw error
   }
-
+}
 
 const getCharacter = (id) => {
   try {
@@ -20,8 +19,20 @@ const getCharacter = (id) => {
     throw error
   }
 }
+const getSearch = (inputValue) => {
+  try {
+    const result = http.get(`characters?nameStartsWith=${inputValue}&apikey=${public_key}`)
+    console.log(inputValue);
+    return result
+  } catch (error) {
+    throw error
+  }
+}
+
+
 
 export {
     getCharacters,
-    getCharacter
+    getCharacter,
+    getSearch,
 }
