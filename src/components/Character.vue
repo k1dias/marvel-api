@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="info-container">
     <div class="character-card">
       <div class="left">
         <h1 class="title">
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
+.info-container {
   color: white;
   text-shadow: 0px 0px 4px #000000;
 }
