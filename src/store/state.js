@@ -4,4 +4,5 @@ export default {
     url: '',
     extension: '',
     charImg: '',
+    searchChar: '',
 }

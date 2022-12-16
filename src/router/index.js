@@ -28,7 +28,7 @@ const routes = [
     component: () => import('../components/Character.vue')
   },
   {
-    path: '/CharacterSearch',
+    path: '/CharacterSearch/:inputValue',
     name: 'charactersearch',
     component: () => import('../components/CharacterSearch.vue')
   }

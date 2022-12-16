@@ -19,6 +19,7 @@
 
 <script>
 import { getCharacters } from "../../services/characters";
+import { mapState } from "vuex";
 
 export default {
   name: "Characters",
@@ -30,7 +31,9 @@ export default {
   created() {
     this.fetchCharacters();
   },
-
+  computed: {
+    ...mapState(["searchChar"])
+  },
   methods: {
     async fetchCharacters() {
       try {
@@ -47,6 +50,11 @@ export default {
       }
     },
   },
+  watch: {
+    "searchChar": function(){
+      console.log('alou');
+    },
+  }
 };
 </script>
 

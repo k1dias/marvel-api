@@ -12,7 +12,7 @@
             <router-link to="/"> Personagens </router-link>
             <router-link to="/about"> Sobre </router-link>
             <router-link to="/contact"> Contato </router-link>
-            <SearchBar />
+            <SearchBar v-on="$listeners" />
           </ul>
         </nav>
       </div>

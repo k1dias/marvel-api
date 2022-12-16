@@ -1,38 +1,36 @@
 <template>
   <div class="input-group">
-    <form @submit.prevent="getData">
-    </form>
     <input
       type="search"
       class="form-control"
       placeholder="Buscar personagem"
       v-model="inputValue"
     />
-    <router-link :to="{ name: 'charactersearch', params: {inputValue: this.inputValue}}">
-      <button 
-        type="button" 
-        class="btn btn-search"
-        @click="captureSearch($event)">
-        <i class="fas fa-search"></i>
-      </button>
-    </router-link>
+    <button 
+      type="button" 
+      class="btn btn-search"
+      @click="test">
+      <i class="fas fa-search"></i>
+    </button>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   name: "SearchBar",
 
-  data() {
-    return {
-      inputValue: null,
-    }
-  },
+  data: () => ({
+    inputValue: null,
+  }),
 
   methods: {
-    captureSearch() {
-      console.log(this.inputValue)
-    }
+    ...mapActions(["setSearchChar"]),
+
+    test() {
+      this.setSearchChar(this.inputValue)
+    },
   }, 
 }
 </script>
