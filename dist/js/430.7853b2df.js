@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmarvel_api"]=self["webpackChunkmarvel_api"]||[]).push([[430],{430:function(n,t,a){a.r(t),a.d(t,{default:function(){return i}});var e=function(){var n=this;n._self._c;return n._m(0)},c=[function(){var n=this,t=n._self._c;return t("div",{staticClass:"contact"},[t("h1",[n._v("Pagina de contato")])])}],u={name:"ContactView",components:{}},l=u,r=a(1),s=(0,r.Z)(l,e,c,!1,null,null,null),i=s.exports}}]);
+//# sourceMappingURL=430.7853b2df.js.map
