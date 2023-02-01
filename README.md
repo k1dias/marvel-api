@@ -19,11 +19,13 @@ I chose Vue.Js framework, since this is the framework I use in my day to day wor
 ## How to run this aplication: 
 
 1) In order to run this aplication, you must have node.js installed and running at v14.x.x and yarn as well
-2) Clone the repository with this command at Git Bash: `git clone https://github.com/k1dias/marvel-api.git`
-3) Open the project
-4) Run CMD: yarn install
-5) Run CMD: yarn dev
-6) Open `http://localhost:8080` at your browser
+2) Login or create a developer account at `https://developer.marvel.com/` and copy your API key (you'll paste it inside the .env file)
+3) Clone the repository with this command at Git Bash: `git clone https://github.com/k1dias/marvel-api.git`
+4) Open the project
+5) Run CMD: yarn install
+6) Add a .env file at the root following the .env.example
+7) Run CMD: yarn dev
+8) Open `http://localhost:3001` at your browser
 
 
 #### Project setup
